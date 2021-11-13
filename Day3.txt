@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class Employee
+{
+    private int eid;
+    private String name;
+    private float salary;
+    void inputDetails()
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.println ("Enter name");
+        name=s.nextLine();
+        System.out.println ("Enter eid");
+        eid=s.nextInt();
+        System.out.println ("Enter salary");
+        salary=s.nextFloat(); 
+    }
+    void showDetails()
+    {
+        System.out.println ("Name:"+name);
+        System.out.println ("EID:"+eid);
+        System.out.println ("Salary:"+salary);
+    }
+}
+class EmployeeDetails
+{
+    public static void main (String args[])
+    {
+        Employee o=new Employee();
+        o.inputDetails();
+        o.showDetails();
+    }
+}
